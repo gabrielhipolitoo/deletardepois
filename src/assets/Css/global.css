@@ -1,0 +1,46 @@
+:root{
+    --color-gradient-1: rgb(20, 20, 20);
+    --color-gradient-2: rgb(32, 31, 31);
+    --color-paragrafo-text:#dbdbdb;
+    --color-brand:#fff;
+    font-size: 62.5%;
+    
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portifolio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+p,a,li {
+    color: #ffff;
+}
+
+
+html,body{
+    font-family: 'open sans',sans-serif;
+    box-sizing: border-box;
+    background-color: #0e0e0e;
+    height: 100%;
+}
+
+
+.portifolio{
+    background-image: url('../Imgs//bg_main.svg');
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: 600px 200px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* variaveis  */
+

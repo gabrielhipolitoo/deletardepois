@@ -1,0 +1,50 @@
+.sobre {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.sobre h1{
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.grupo_sobre{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.texto p {
+    width: 700px;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+
+#eu{
+    width: 380px;
+    height: 300px;
+    box-shadow: -4px 6px 9px 0px #0c0c0c47;
+    background-color: rgb(3, 3, 3);
+    border-radius: 10px;
+}
+
+.contatos{
+    display: flex;
+    padding: 2px;
+}
+
+.contatos a span svg{
+    margin: 10px 40px 0 0px;
+    color: #424242;
+    font-size: 3.2rem;
+    transition: all 150ms;
+}
+
+.contatos a span svg:hover{
+    transition: all 150ms;
+    color: #d05338;
+}

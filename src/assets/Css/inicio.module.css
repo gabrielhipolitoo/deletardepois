@@ -1,0 +1,31 @@
+.inicio {
+  display: flex;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--color-paragrafo-text);
+    font-weight: lighter;
+  font-size: 2.3rem;
+}
+
+.texto strong{
+    background:linear-gradient();
+    color: #f3f3f3;
+    font-size: 3rem;
+}
+
+.texto > img{
+  margin-top: 10px;
+}

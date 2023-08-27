@@ -1,0 +1,44 @@
+.servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servicos h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.icones_servicos{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+    width: 1300px;
+}
+
+.icones_servicos div{
+    padding: 2%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px -2px 3px 0px #d0533845;
+}
+
+.icones_servicos div > svg{
+    color: #D05338;
+    font-size: 8rem;
+}
+
+.icones_servicos div > h2{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.icones_servicos p {
+    width: 270px;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    text-align: center;
+}
