@@ -14,11 +14,6 @@
     padding: 0;
 }
 
-.portifolio{
-    display: flex;
-    flex-direction: column;
-}
-
 
 p,a,li {
     color: #ffff;
@@ -29,7 +24,7 @@ html,body{
     font-family: 'open sans',sans-serif;
     box-sizing: border-box;
     background-color: #0e0e0e;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -37,6 +32,7 @@ html,body{
     background-image: url('../Imgs//bg_main.svg');
     background-repeat: no-repeat;
     background-size: 100rem;
+    height: 100vh;
     background-position: 600px 200px;
 }
 

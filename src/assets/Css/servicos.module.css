@@ -42,3 +42,18 @@
     font-size: 1.4rem;
     text-align: center;
 }
+
+@media (max-width:1250px) {
+    .icones_servicos{
+        display: flex;
+       max-width: 80%;
+        margin-top: 80px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 850px;
+    }
+
+    .icones_servicos div{
+        margin: 0px 0px 40px 0;
+    }
+}

@@ -17,6 +17,7 @@
 
 
 .texto p {
+    max-width: 90%;
     width: 700px;
     font-weight: lighter;
     font-size: 2rem;
@@ -47,4 +48,28 @@
 .contatos a span svg:hover{
     transition: all 150ms;
     color: #d05338;
+}
+
+@media (max-width:1050px) {
+    .grupo_sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grupo_sobre #eu{
+        margin-bottom: 50px;
+    }
+    .texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contatos{
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+    }
 }

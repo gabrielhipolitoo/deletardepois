@@ -1,56 +1,76 @@
-import React from "react";
-import style from "../../assets/Css/nav.module.css";
+import {IoIosMenu} from 'react-icons/io'
+import React, { useState } from "react";
+import style from "../../assets/Css/nav.css";
 
-const st = style;
+
+//icones
+
+const Nav = () =>{
+
+const [menuActive,setMenuActive] = useState(false)
+  
+
+
 
 window.addEventListener("scroll", () => {
-  const nav = document.querySelector("." + st.nav);
+  const nav = document.querySelector(".nav");
   const top = window.scrollY;
 
   if (top >= 50) {
     nav.style = `
     transition: all 150ms;
-     background: linear-gradient(207deg, #a5532257 10%, rgba(181, 181, 181, 0) 100%);
-
-
+     background: #141414;
     `;
-  } else {
+  } 
+  else {
     return (nav.style = null);
   }
+
 });
 
-const Nav = () => {
-  return (
-    <nav className={`${st.nav} nav`}>
-      <div className={st.nav_left}>
-        <span className={st.brand}>{`<Gabriel/>`}</span>
+
+function toggleMenu(){ 
+
+  return setMenuActive(!menuActive)
+    
+}
+
+
+return (
+  <nav className={`nav ${menuActive ? 'activeMenu':""}`}>
+    <div className={"nav_left"}>
+      <span className={"brand"}>{`<Gabriel/>`}</span>
+    </div>{" "}
+    {/*left */}
+    <div className={"right"}>
+
+      <button onClick={toggleMenu} id={"openMenu"}>
+        <IoIosMenu />
+      </button>
+
+      <div className={"links"}>
+        <ul>
+          <li>
+            <a href="#in">Inicio</a>
+          </li>
+          <li>
+            <a href="">Quem sou</a>
+          </li>
+          <li>
+            <a href="">Serviços</a>
+          </li>
+          <li>
+            <a href="">Projetos</a>
+          </li>
+          <li>
+            <a href="">Habilidades</a>
+          </li>
+        </ul>
       </div>{" "}
-      {/*left */}
-      <div className={st.right}>
-        <div className={st.links}>
-          <ul>
-            <li>
-              <a href="#in">Inicio</a>
-            </li>
-            <li>
-              <a href="">Quem sou</a>
-            </li>
-            <li>
-              <a href="">Serviços</a>
-            </li>
-            <li>
-              <a href="">Projetos</a>
-            </li>
-            <li>
-              <a href="">Habilidades</a>
-            </li>
-          </ul>
-        </div>{" "}
-        {/*links */}
-      </div>
-      {/*right */}
-    </nav>
-  );
-};
+      {/*links */}
+    </div>
+    {/*right */}
+  </nav>
+)};
 
 export default Nav;
