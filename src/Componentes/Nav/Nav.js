@@ -1,4 +1,5 @@
-import {IoIosMenu} from 'react-icons/io'
+import {IoIosClose, IoIosMenu} from 'react-icons/io'
+import {GrClose} from 'react-icons/gr'
 import React, { useState } from "react";
 import style from "../../assets/Css/nav.css";
 
@@ -9,8 +10,6 @@ const Nav = () =>{
 
 const [menuActive,setMenuActive] = useState(false)
   
-
-
 
 window.addEventListener("scroll", () => {
   const nav = document.querySelector(".nav");
@@ -30,8 +29,12 @@ window.addEventListener("scroll", () => {
 
 
 function toggleMenu(){ 
+  setMenuActive(!menuActive)
+  if(menuActive){
+   return <IoIosMenu />
+  }
+  return <IoIosMenu />
 
-  return setMenuActive(!menuActive)
     
 }
 
@@ -44,9 +47,10 @@ return (
     {/*left */}
     <div className={"right"}>
 
-      <button onClick={toggleMenu} id={"openMenu"}>
-        <IoIosMenu />
+      <button onClick={toggleMenu}  id={"openMenu"}>
+        {!menuActive ? <IoIosMenu/>:<IoIosClose/>}
       </button>
+      
 
       <div className={"links"}>
         <ul>

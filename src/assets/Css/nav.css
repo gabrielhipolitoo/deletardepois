@@ -52,6 +52,7 @@
 @media (max-width:1250px) {
 
   #openMenu{
+    transition: all 150ms;
     display: block;
   }
   .links{

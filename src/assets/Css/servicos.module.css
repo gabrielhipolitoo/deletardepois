@@ -26,8 +26,12 @@
 }
 
 .icones_servicos div > svg{
-    color: #D05338;
-    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: red;
+    width: 50px;
+    height: 60px;
 }
 
 .icones_servicos div > h2{

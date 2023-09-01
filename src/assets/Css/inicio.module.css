@@ -31,3 +31,17 @@
 .texto > img{
   margin-top: 10px;
 }
+
+@media (max-width:750px) {
+  
+  .texto > p {
+    width: auto;
+    text-align: center;
+  }
+  .texto > strong{
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  
+  
+}

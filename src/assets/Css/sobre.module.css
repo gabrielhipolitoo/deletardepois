@@ -73,3 +73,36 @@
         padding: 2px;
     }
 }
+
+
+@media (max-width:750px) {
+    .grupo_sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grupo_sobre #eu{
+        margin-bottom: 50px;
+    }
+    .texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #eu{
+        display: none;
+    }
+    .texto p{
+        width: auto;
+        font-size: 1.7rem;
+    }
+
+    .contatos{
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+    }
+}
