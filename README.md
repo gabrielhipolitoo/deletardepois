@@ -1,7 +1,8 @@
 <h1 align="center">
   😍<br>Meu Portifólio - Gabriel Hipólito
 </h1>
-![Logo do R](http://developer.r-project.org/Logo/Rlogo-5.png)
+<img src="/src/assets/Imgs/github/projeto.png" alt="Logo da Markdown">
+
 
 
 
